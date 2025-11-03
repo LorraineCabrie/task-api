@@ -16,7 +16,4 @@ paths:
     $ref: paths/tasks.yaml
   /tasks/{id}:
     $ref: paths/tasksbyid.yaml
-components:
-  schemas:
-    NotFoundError:
-      $ref: ./components/schemas/NotFoundError.yaml
+

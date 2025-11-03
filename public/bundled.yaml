@@ -96,7 +96,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/NotFoundError'
+                $ref: '#/components/schemas/ValidationError'
               examples:
                 notFound:
                   summary: Task with given ID does not exist
