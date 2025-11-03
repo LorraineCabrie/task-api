@@ -46,7 +46,7 @@ post:
     '400':
       $ref: ../components/responses/BadRequest.yaml
 
-/tasks/{id}:
+tasks/{id}:
   get:
     summary: Retrieve a single task by its ID
     description: Returns a single task resource identified by its unique ID.
