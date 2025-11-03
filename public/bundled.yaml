@@ -59,7 +59,7 @@ paths:
                 $ref: '#/components/schemas/Task'
         '400':
           $ref: '#/components/responses/BadRequest'
-    /tasks/{id}:
+    tasks/{id}:
       get:
         summary: Retrieve a single task by its ID
         description: Returns a single task resource identified by its unique ID.
