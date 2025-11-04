@@ -127,6 +127,12 @@ components:
           type: array
           items:
             type: string
+    NotFoundError:
+      type: object
+      properties:
+        error:
+          type: string
+          example: "Task not found"
   responses:
     BadRequest:
       description: Invalid input
@@ -134,3 +140,9 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ValidationError'
+    FoundRequest:
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/NotFoundError'
